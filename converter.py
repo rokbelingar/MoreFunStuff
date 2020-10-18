@@ -1,8 +1,14 @@
 print("Hello! Welcome to mile-kilometer converter")
-distance = int(input("Please, type in the ammount of kilometers you want to convert to miles: "))
 
-while distance > 0:
-    print("That would ammount in " + str(distance*0.62) + " Miles")
-    break
 
-print("Any other ammount you want to convert?")
+while True:
+    distance = input("Please, type in the amount of kilometers you want to convert to miles: ")
+    distance = float(distance.replace(",", "."))
+
+    print("That would amount in " + str(distance*0.62) + " Miles")
+
+    another_one = input('Do you want to do it again? ').lower()
+
+    if another_one != "yes":
+        break
+

@@ -1,5 +1,4 @@
-mood = input("Is today a beautiful day? ")
-mood.lower()
+mood = input("Is today a beautiful day? ").lower()
 
 if mood.lower() == "yes":
     print("You should enjoy it :)")
